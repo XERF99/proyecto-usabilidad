@@ -1,0 +1,270 @@
+/** {
+    border: 1px solid #ff0000;
+    margin: 0px;
+    padding: 0px;
+}*/ 
+
+:root {
+    --primary-color: #246cb4;
+    --secondary-color: #2c5c84;
+
+}
+
+/*HEADER*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#links a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: smaller;
+    display: inline-block;
+}
+
+/*SECOND SECTION */
+
+#logo img {
+    height: 75px;
+}
+
+#second-section {
+    text-align: center;
+}
+
+#name-hospital {
+    align-items: center;
+}
+
+#name-hospital p {
+    color: var(--primary-color);
+}
+
+/*NAV BAR*/
+#header-bar {
+    margin: auto;
+    width: 100%;
+}
+
+/*GENERAL STYLES*/
+#header-bar nav ul {
+    list-style: none;
+    padding: 0;
+}
+.container-fluid,#container{position: relative;}
+.container-fluid{z-index: 2;}
+.container{z-index: 100;}
+
+#header-bar nav li {
+    line-height: 3rem;
+    position: relative;
+}
+
+#header-bar .menu ul {
+    position: absolute;
+}
+
+#header-bar nav a {
+    color: white;
+    display: block;
+    padding: 0 2.5em;
+    text-decoration: none;
+    transition: .4s;
+}
+
+#header-bar nav a:hover {
+    background-color: var(--secondary-color);
+}
+
+
+/*
+#header-bar nav li ul {
+    display: none;
+}
+
+#header-bar nav li:hover>ul {
+    display: block;
+}
+*/
+
+/*FIRST LEVEL*/
+.menu {
+    background-color: var(--primary-color);
+    display: table;
+    width: 100%;
+}
+
+#header-bar .menu>li {
+    float: left;
+}
+
+/*SECOND LEVER*/
+#header-bar nav li li {
+    background-color: var(--primary-color);
+    max-height: 0;
+    transition: all .6s;
+    overflow: hidden;
+    width: 200px;
+}
+
+#header-bar nav li:hover>ul>li {
+    max-height: 500px;
+    overflow: visible;
+}
+
+#header-bar .menu>li>ul {
+    top: 100%;
+}
+
+/*THIRD LEVEL*/
+#header-bar .menu ul ul {
+    left: 100%;
+    top: 0;
+}
+
+/*CAROUSEL*/
+
+.carousel-caption p {
+    display: none;
+    text-align: justify;
+}
+
+.carousel:hover .carousel-caption p {
+    display: block;
+}
+
+#video {
+    padding: auto;
+}
+
+/*ZIMBRA*/
+
+#box {
+    height: vh;
+    align-items: center;
+    justify-content: center;
+    margin: 125px auto;
+    color: white;
+}
+
+.logo-zimbra {
+    text-align: center;
+}
+
+.logo-zimbra img {
+    height: 75px;
+}
+
+.login {
+    width: 360px;
+    height: min-content;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: var(--primary-color);
+}
+
+.login form {
+    font-size: 20px;
+}
+
+.login form .form-group {
+    margin-bottom: 12px;
+}
+
+.login form input[type="submit"] {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.invalid-feedback {
+    color: white;
+}
+
+#btn-login {
+    background-color: #1F48CC;
+}
+
+/*MAPA DEL SITIO*/
+.mapHospital{ 
+    width: 665px; height: 545; margin: 0%;
+    padding: 1px 1px 1px 1px; border: 1px solid black; border-radius: 3%;}
+#title-h1 {
+    margin: 0%;
+    float: left;
+    margin-left: 80px;
+    border-radius: 5%;
+    width: 500px;
+    height: 550px;
+}
+#title-h1 .h2 {
+    color: var(--primary-color);
+}
+
+#infoContato{
+    margin: 0px;
+    float: right;
+    margin-right: 80px;
+    width: 500px;
+    height: 550px;
+}
+.ContenedorContacto{
+    background-color: #246cb4; border-radius: 5%;
+    width: 500px;
+    height: 550px;
+}
+.ImagnesRedes{height: 130px;}
+.ImagnesRedes img{
+    border-radius: 50%;
+    margin: auto;
+}
+.ImagnesF{float: left; margin-left: 50px; margin-right: 50px;
+    display: grid;
+  place-content: center;
+  margin-top: 25px;
+  }
+.ConstactEscroto{margin-right: 20px; margin-left: 20px;}
+
+#paragraph-mapa {
+    text-align:justify ;
+}
+
+
+.recuadro {
+    background-color: #246cb4;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+/* Centra el contenido del pie de página */
+.footer {
+    margin-top: 100px;
+    width: 100%;
+    background-color: #246cb4;
+    text-align: center;
+    display: flex;
+    float: left;
+    line-height: normal;
+}
+
+.colorTextoPieDePagina{
+    color: #ffffff;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+/* Centra la imagen */
+.imagenPieDePagina {
+    display: block;
+    margin: 0 auto;
+    width: 500px;
+    height: 100px;
+}
